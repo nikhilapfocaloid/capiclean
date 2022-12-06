@@ -5,29 +5,11 @@
         <p class="choose_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
         <div class="choose_section_2 layout_padding">
           <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <div class="choose_box">
-                <h1 class="client_taital">12004+</h1>
-                <h4 class="client_text">Our clients</h4>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="choose_box">
-                <h1 class="client_taital">10004+</h1>
-                <h4 class="client_text">Happy clients</h4>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="choose_box">
-                <h1 class="client_taital">804+</h1>
-                <h4 class="client_text">Supports</h4>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="choose_box">
-                <h1 class="client_taital">905+</h1>
-                <h4 class="client_text">Awards</h4>
-              </div>
+            <div v-for="data in choose_data" v-bind:key="data.id" class="col-lg-3 col-sm-6">
+               <div class="choose_box">
+                 <h1 class="client_taital">{{data.count}}+</h1>
+                 <h4 class="client_text">{{data.title}}</h4>
+               </div>
             </div>
           </div>
           <div class="image_3"><img src="../assets/images/img-3.png"></div>
@@ -36,3 +18,19 @@
       </div>
     </div>
 </template>
+
+<script>
+export default {
+  name: 'ChooseView',
+  data() {
+    return{
+      choose_data: [
+        { id: 1, count: '12004' , title: 'Our clients'},
+        { id: 2, count: '10004' ,title: 'Happy clients' },
+        { id: 3, count: '804' ,title: 'Supports' },
+        { id: 4, count: '905' , title: 'Our clients'}
+      ]
+    }
+  }
+};
+</script>

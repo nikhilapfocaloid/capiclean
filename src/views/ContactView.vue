@@ -1,14 +1,14 @@
 <template>
-    <footer-component/>
+    <contact-component/>
  </template>
  
  <script>
- import FooterComponent from '../components/FooterComponent.vue'
+ import ContactComponent from '../components/ContactComponent.vue'
  
  export default {
    name: 'ContactView',
    components: {
-     FooterComponent
+    ContactComponent
    }
  }
  </script>

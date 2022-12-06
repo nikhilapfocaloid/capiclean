@@ -2,18 +2,19 @@
     <div>
         <header-component/>
         <router-view />
-        <copyright-component/>
+        <footer-component/>
     </div>
 </template>
 
 <script>
 import HeaderComponent from '../components/HeaderComponent.vue'
-import CopyrightComponent from '../components/CopyrightComponent.vue'
+import FooterComponent from '../components/FooterComponent.vue'
 
 export default {
+    name: "LayoutDefault",
     components: {
         HeaderComponent,
-        CopyrightComponent
+        FooterComponent
     }
 }
 </script>
