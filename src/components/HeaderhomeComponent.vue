@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="logo">
-                <router-link to="/home"><img src="../assets/images/logo.png" /></router-link>
+                <router-link to="/"><img src="../assets/images/logo.png" /></router-link>
             </div>
           </div>
           <div class="col-md-9">
@@ -25,7 +25,7 @@
                 <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
                     <div class="overlay-content">
-                        <router-link to="/home">Home</router-link>
+                        <router-link to="/">Home</router-link>
                         <router-link to="/services">Services</router-link>
                         <router-link to="/about">About</router-link>
                         <router-link to="/choose">Choose</router-link>

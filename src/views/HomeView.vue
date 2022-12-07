@@ -225,17 +225,17 @@
      </div>
      <!-- newsletter section end -->
    
-     <contact-component/>
+     <contact-view/>
    </div>
 </template>
 
 <script>
-import ContactComponent from '../components/ContactComponent.vue'
+import ContactView from './ContactView.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    ContactComponent
+    ContactView
   },
   data() {
     return{
